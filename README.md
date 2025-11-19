@@ -4,18 +4,18 @@
 Windows Explorer can slow down over time due to accumulated folder view settings. This PowerShell script **clears the cache**, **resets the database**, and **optimizes performance**, ensuring a **faster and smoother navigation experience**.
 
 ## 🔧 How It Works
-✅ Deletes the `Bags` and `BagMRU` registry keys, which store folder view settings.  
-✅ Recreates the `Bags` key.  
-✅ Creates a subkey called `AllFolders` inside `Bags`.  
-✅ Adds another subkey called `Shell` inside `AllFolders`.  
-✅ Sets a string value (`FolderType`) to `NotSpecified`, preventing unnecessary metadata storage.  
+✅ Deletes the `Bags` and `BagMRU` registry keys, which store folder view settings.
+✅ Recreates the `Bags` key.
+✅ Creates a subkey called `AllFolders` inside `Bags`.
+✅ Adds another subkey called `Shell` inside `AllFolders`.
+✅ Sets a string value (`FolderType`) to `NotSpecified`, preventing unnecessary metadata storage.
 
 ## 🚀 Usage
 
 ### Running the Script with One Command
 - For a faster and easier experience, simply run the following command in PowerShell:
     ```powershell
-    irm "https://raw.githubusercontent.com/kaixplt/windows-explorer-optimizer/refs/heads/main/optimize_explorer_perfomance.ps1" | iex
+    irm "https://raw.githubusercontent.com/jiroaku/explfix/refs/heads/main/optimize_explorer_perfomance.ps1" | iex
     ```
 
 ### Running the Script Manually
@@ -32,8 +32,8 @@ Windows Explorer can slow down over time due to accumulated folder view settings
    ```
 
 ## 🖥️ Compatibility
-- **Supported OS**: Windows 10, Windows 11  
-- **Permissions Required**: Administrator privileges  
+- **Supported OS**: Windows 10, Windows 11
+- **Permissions Required**: Administrator privileges
 
 ## ⚠️ Disclaimer
 ⚠️ **Use at your own risk!** Modifying the Windows Registry can impact system behavior. Always create a backup before making changes.
@@ -42,4 +42,4 @@ Windows Explorer can slow down over time due to accumulated folder view settings
 This project is **open-source** and released under the **MIT License**.
 
 ## 👤 Author
-[KaiXploit](https://github.com/kaixplt)
+[jiroaku](https://github.com/jiroaku)
